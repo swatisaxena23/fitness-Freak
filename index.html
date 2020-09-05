@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Freak!</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    /*CSS reset*/
+    body{
+        font-family: 'Bree Serif',cursive;
+        color:  white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        
+        
+    }
+    .left{
+        display: inline-block;
+       /* border: 2px solid rgb(87, 11, 11) ;*/
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        
+    }
+    .mid{
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+          /*border: 2px solid green;*/
+    }
+    .left img{
+        
+        width: 100px;
+        
+        display: block;
+        
+    }
+    .left div{
+        line-height: 19px;
+        font-size:26px;
+        text-align: center;
+
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /*border: 2px solid yellowgreen;*/
+
+
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        color:white;
+        display: inline-block;
+        font-size: 17px;
+        
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 12px 12px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+     text-decoration: underline;
+     color: grey;
+    }
+    .btn{
+        font-family: 'Bree Serif',cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color:white;
+        padding: 4px 14px;
+        border:2px solid gray;
+        border-radius: 8px;
+        font-size:15px;
+        cursor:pointer;
+    }
+    .btn:hover{
+        background-color:grey;
+    }
+    .container{
+        border:2px solid white;
+        margin: 104px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+        text-align: center;
+        font-family: 'Bree Serif',cursive;
+        
+    }
+    .form-group input{
+        font-family: 'Bree Serif',cursive;
+        text-align: center;
+        display: block;
+        width: 85%;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container h1{
+     text-align: center;
+    }
+    .container button{
+        display: block;
+        width:82%;
+        margin: 20px auto;
+    }
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo-->
+        <div class="left">
+            <img src="img/gym.png" alt="">
+            <div>Fitness Freak!</div>
+       
+
+        </div>
+        <!-- mid box for navbar-->
+        <div class="mid">
+       
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        </div>
+        <!-- right box for buttons-->
+        <div class="right">
+         <button class="btn">Join Now</button>
+         <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+               Name: <input type="text" name="" placeholder="Enter Your Name Here">
+            </div>
+            <div class="form-group">
+                Your Age: <input type="text" name="" placeholder="Enter Your Age Here">
+            </div>
+            <div class="form-group">
+               Gender: <input type="text" name="" placeholder="Enter Your Gender Here">
+            </div>
+            <div class="form-group">
+               Email: <input type="text" name="" placeholder="Enter Your Email Here">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
